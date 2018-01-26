@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="truefalse.zain.android.truefalse.ResultsActivity">
+
+    <TextView
+        android:id="@+id/grade"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Congratulations"
+        android:textSize="30sp" />
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:numStars="8"
+        android:rating="8"
+        android:stepSize="1"
+        android:isIndicator="true"
+        android:layout_above="@+id/outOf"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/outOf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:padding="16dp"
+        android:text="You scored 8 out of 8"
+        android:textSize="20sp"
+        android:layout_below="@+id/grade"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/retry"
+        android:textSize="15sp"
+        android:background="#4ACAF450"
+        android:padding="8dp"
+        android:text="Retry Quiz"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/revise"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"/>
+
+    <Button
+    android:id="@+id/revise"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#4CAF50"
+    android:fontFamily="casual"
+    android:padding="10dp"
+    android:text="Revise"
+    android:textColor="#fff"
+    android:textSize="15sp"
+    android:textStyle="bold"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:fontFamily="casual"
+        android:padding="10dp"
+        android:text="share score"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/retry"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/trophy"
+        android:layout_above="@+id/share"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
